@@ -1,0 +1,165 @@
+/* LoginF.css */
+
+/* Réinitialisation des styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration:none
+}
+
+/* Styles de la zone de connexion */
+
+
+/* Styles de l'image principale */
+.principal {
+  width: 30%;
+  object-fit: cover;
+  margin-left:-1%;
+  margin-top: -9px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Styles pour cacher l'image principale */
+.principal.hidden {
+  opacity: 0;
+}
+
+/* Styles du logo Instagram */
+.logo {
+  width: 84%;
+  margin-top: -88px;
+  margin-left: 7%;
+}
+
+/* Styles de la zone de connexion */
+.login {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 27%;
+
+}
+
+.compte {
+  margin-left: 7%;
+  margin-top: 3%;
+  border: 1px solid grey;
+  height: 400Px;
+  width: 37%;
+  padding-bottom: 10px;
+
+
+}
+
+.insta {
+  margin-left: 21.5%;
+  height: 46%;
+  width: 55%;
+  margin-top: -10%;
+}
+
+input {
+  height: 38px;
+  width: 75%;
+  margin-left: 11%;
+  margin-top: 3%;
+}
+
+.input {
+  margin-top: -10%;
+}
+
+.trait {
+  width: 30%;
+  margin-top: -5%;
+}
+
+.gauche {
+  margin-left: 7%;
+}
+
+.droite {
+  margin-left: 20%;
+}
+
+.submit {
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: #00BFFF;
+  border: 0px solid #00BFFF;
+}
+
+.ou {
+  margin-left: 43%;
+  margin-top: -19%;
+}
+/*//////////////////*/
+
+.facebook{
+  width: 60Px;
+  margin-top: 18Px;
+  margin-left: 9%;
+}
+
+
+.conface{
+  font-size: 14px;
+  margin-left: 23%;
+  margin-top: -27px;
+  font-weight: 600;
+  color: #3b5998;
+}
+
+.oublié{
+  color: #3b5998;
+  font-size: 13px;
+  margin-top: 15px ;
+  margin-left: 28%;
+}
+
+.con{
+  margin-top: 17%;
+  padding: 21px;
+  font-size: 15px;
+  white-space: nowrap;
+  border: 1px solid grey;
+}
+
+.crée{
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 6.4%;
+  border: 1px solid grey;
+  margin-top: 14%;
+  padding: 17px;
+  margin-left: -1%;
+}
+
+.telecharger{
+  font-size: 15px;
+  margin-top: 16px;
+  margin-left: 23%;
+  font-weight: 400;
+}
+
+.store{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin-top: 5%;
+  margin-left: 9%;
+
+}
+.inscription{
+  color: #3b5998;
+}
+
+.vous{
+  color: #3b5998;
+}

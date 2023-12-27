@@ -1,0 +1,137 @@
+.inscrire{
+    border: 1px solid grey;
+    width: 29%;
+    margin-left: 39%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.insta1{
+    margin-left: 21%;
+    height: 42%;
+    margin-top: -15%;
+    width: 54%;
+  
+}
+
+.amis{
+    margin-left: 4%;
+    margin: auto;
+    margin-top: -13%;
+    text-align: center;
+    color: grey;
+}
+
+h1{
+    font-size: 17px;
+    
+}
+
+.blanc{
+    width: 14px;
+    margin-left: -6%;
+    background-color:	white;
+
+}
+
+.face{
+    background-color: #4267B2;
+    color: #1E90FF;
+    height: 40px;
+    width: 78%;
+    border: 0px solid #1E90FF;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 11%;
+    margin-top: 4%;
+  
+}
+
+
+
+.ligne{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11%;
+    margin-top: -10%;
+
+}
+
+.trait1{
+    width: 40%;
+    height: 5%;
+}
+
+.where{
+    margin-top: 16%;
+}
+
+.case{
+    margin-top: -13%;
+}
+
+.info{
+    font-size: 12.5px;
+    margin-left: -2%;
+    text-align: center;
+}
+
+.condition{
+    font-size: 12.5px;
+    margin-top: 3%;
+    margin-left: -5%;
+    text-align: center;
+}
+
+.suivant{
+    background-color: #00BFFF;
+    height: 40px;
+    width: 78%;
+    border: 0px solid #1E90FF;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 11%;
+    margin-top: 4%;
+
+  
+}
+
+.compte1{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{    font-size: 14px;
+font-weight: 400;
+border: 1px solid grey;
+width: 29%;
+margin-left: 39%;
+text-align: center;
+padding: 20px;
+margin-top: 1%;
+
+}
+
+.télécharge{
+    font-weight: 300;
+    text-align: center;
+    margin-left: 6%;
+    font-size: 15px;
+    margin-top: 1.5%;
+}
+
+.télé{
+    width: 20%;
+
+}
+
+.app{
+    display: flex;
+    flex-direction: row;
+    margin-left: 41%;
+    margin-top: 1%;
+}
