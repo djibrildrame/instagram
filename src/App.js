@@ -3,6 +3,7 @@ import LoginForm from "./Component/LoginForm";
 import Compte from "./Component/Compte";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,9 +13,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-  <div>
-    <Compte />
-  </div>;
 }
 
 export default App;

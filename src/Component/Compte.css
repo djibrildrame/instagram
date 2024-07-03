@@ -2,12 +2,20 @@
     border: 1px solid grey;
     width: 29%;
     margin-left: 39%;
-    margin-top: 2%;
+    margin-top: 13%;
     padding-bottom: 2%;
+    padding-top: 80px;
+}
+
+.debut{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .insta1{
     margin-left: 21%;
+    margin-bottom: 17%;
     height: 42%;
     margin-top: -15%;
     width: 54%;

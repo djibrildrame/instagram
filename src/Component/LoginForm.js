@@ -72,7 +72,7 @@ const LoginForm = () => {
           <p className="oublié">Mot de passe oublié ? </p>
 
           <h1 className="crée">
-            Vous n’avez pas de compte ?<Link>Inscrivez-vous</Link>
+            Vous n’avez pas de compte ?<Link to="/Compte">Inscrivez-vous</Link>
           </h1>
           <h1 className="telecharger">Téléchargez l'application.</h1>
           <div className="store">
