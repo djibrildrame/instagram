@@ -1,9 +1,11 @@
+// src/Component/Compte.js
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import insta from "./instagram.png";
 import "./Compte.css";
-import blanc from "./Compte.png";
+import blanc from "./picture/Instagram_files/blanc.jpeg";
 import trait from "./picture/Instagram_files/trait.png";
 import Appstore from "./picture/Instagram_files/Appstore.png";
 import Googleplay from "./Playstore.png";
@@ -15,6 +17,7 @@ const Compte = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [inscriptionSuccess, setInscriptionSuccess] = useState(false);
+  const navigate = useNavigate();
 
   // Fonction pour valider les champs du formulaire
   const handleValidation = () => {
@@ -44,6 +47,7 @@ const Compte = () => {
 
         console.log(response.data);
         setInscriptionSuccess(true);
+        navigate("/confirmation");
       } catch (error) {
         console.error("Erreur lors de la création du compte", error);
         setErrors({ form: "Erreur lors de la création du compte." });
@@ -51,16 +55,20 @@ const Compte = () => {
     }
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    handleInscription();
+  };
+
   return (
     <div>
       <div className="compte1">
         <div className="inscrire">
-         
           <img className="insta1" src={insta} alt="Instagram logo" />
           <h1 className="amis">
-            Inscrivez-vous pour voir les photos <br/> et vidéos de vos amis.
+            Inscrivez-vous pour voir les photos <br /> et vidéos de vos amis.
           </h1>
-          
+
           <button className="face">
             <img className="blanc" src={blanc} alt="Facebook logo" />
             Se connecter avec Facebook
@@ -101,20 +109,21 @@ const Compte = () => {
             {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
           </div>
           <p className="info">
-            Les personnes qui utilisent notre service ont pu<br/> importer vos coordonnées sur Instagram. En<br/>
+            Les personnes qui utilisent notre service ont pu<br /> importer vos coordonnées sur Instagram. En<br />
             <Link to="#">savoir plus</Link>
           </p>
           <p className="condition">
-            En vous inscrivant, vous acceptez nos <br/><Link to="#">Conditions générales</Link>. Découvrez comment <br/> nous collectons, utilisons et partageons vos <br/>données en lisant notre
-            <Link to="#">Politique de <br/> confidentialité</Link> et comment nous utilisons les <br/> cookies et autres technologies similaires en consultant notre
-            <Link to="#">Politique d’utilisation <br/>des cookies</Link>.
+            En vous inscrivant, vous acceptez nos <br /><Link to="#">Conditions générales</Link>. Découvrez comment <br /> nous collectons, utilisons et partageons vos <br />données en lisant notre
+            <Link to="#">Politique de <br /> confidentialité</Link> et comment nous utilisons les <br /> cookies et autres technologies similaires en <br />consultant notre
+            <Link to="#">Politique d’utilisation des cookies</Link>.
           </p>
-          <input
-            className="suivant"
-            type="submit"
-            value="Se connecter"
-            onClick={handleInscription}
-          />
+          <Link to="/confirmation" onClick={handleClick}>
+            <input
+              className="suivant"
+              type="submit"
+              value="Se connecter"
+            />
+          </Link>
         </div>
         <h2>
           Vous avez un compte ? <Link to="/login">Connectez-vous</Link>
